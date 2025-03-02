@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="container">
+    <main class="card">
+      <section class="results">
+        <h2 class="results__title">Your Result</h2>
+        <p class="results__score">
+          76 <span class="results__points">of 100</span>
+        </p>
+        <h3 class="results__thanks">Great</h3>
+        <p class="results__text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary">
+        <h2 class="summary__title">Summary</h2>
+        <ul class="summary__stats">
+          <li class="summary__info summary__info--red">
+            <img
+              src="./assets/images/icon-reaction.svg"
+              alt="Reaction speed icon"
+              class="summary__icon"
+            />
+            <p class="summary__type">Reaction</p>
+            <p class="summary__points" aria-label="Score 80 out of 100">
+              <span class="summary__score">80</span>/ 100
+            </p>
+          </li>
+          <li class="summary__info summary__info--yellow">
+            <img
+              src="./assets/images/icon-memory.svg"
+              alt="Memory icon"
+              class="summary__icon"
+            />
+            <p class="summary__type">Memory</p>
+            <p class="summary__points" aria-label="Score 92 out of 100">
+              <span class="summary__score">92</span>/ 100
+            </p>
+          </li>
+          <li class="summary__info summary__info--green">
+            <img
+              src="./assets/images/icon-verbal.svg"
+              alt="Chat icon"
+              class="summary__icon"
+            />
+            <p class="summary__type">Verbal</p>
+            <p class="summary__points" aria-label="Score 61 out of 100">
+              <span class="summary__score">61</span>/ 100
+            </p>
+          </li>
+          <li class="summary__info summary__info--blue">
+            <img
+              src="./assets/images/icon-visual.svg"
+              alt="Visual icon"
+              class="summary__icon"
+            />
+            <p class="summary__type">Visual</p>
+            <p class="summary__points" aria-label="Score 72 out of 100">
+              <span class="summary__score">72</span>/ 100
+            </p>
+          </li>
+        </ul>
+        <button class="summary__btn">Continue</button>
+      </section>
+    </main>
+  </body>
 </html>
