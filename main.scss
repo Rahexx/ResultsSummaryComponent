@@ -1,5 +1,8 @@
 @import './styles/base/base';
 @import './styles/utilities/variables';
+@import './styles/utilities/mixins';
+@import './styles/components/card';
+@import './styles/components/results';
 
 .container {
   font-family: $font-primary;

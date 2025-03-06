@@ -1,0 +1,6 @@
+@mixin text($color, $textSize, $fontWeight, $textAlign: center) {
+  color: $color;
+  font-size: $textSize;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
