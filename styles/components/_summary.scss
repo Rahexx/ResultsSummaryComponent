@@ -128,3 +128,36 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-large) {
+  .summary {
+    padding: $space-38 $space-40 $space-46;
+
+    &__title {
+      font-size: $text-24;
+      width: 288px;
+    }
+
+    &__stats {
+      margin: $space-28 0 $space-41;
+    }
+
+    &__info {
+      padding: 0 $space-16;
+      width: 288px;
+
+      &::before {
+        width: 290px;
+      }
+    }
+
+    &__subtitle,
+    &__points {
+      font-size: $text-18;
+    }
+
+    &__btn {
+      width: 288px;
+    }
+  }
+}
