@@ -32,6 +32,7 @@
 
   &__points {
     @include text($light-lavender, $text-16, $font-semibold);
+    opacity: 0.52;
   }
 
   &__thanks {
@@ -42,5 +43,40 @@
     @include text($light-lavender, $text-16, $font-medium);
     margin-top: $space-8;
     width: 260px;
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .results {
+    height: 100%;
+    width: 368px;
+    padding: $space-38 0 $space-46;
+    border-radius: 0 32px 32px 0;
+
+    &__title {
+      font-size: $text-24;
+    }
+
+    &__score {
+      margin: $space-35 0 $space-28;
+      padding: $space-55 0;
+      height: 200px;
+      width: 200px;
+      font-size: $text-72;
+    }
+
+    &__points {
+      font-size: $text-18;
+    }
+
+    &__thanks {
+      font-size: $text-32;
+    }
+
+    &__text {
+      font-size: $text-18;
+      margin-top: $space-14;
+      width: 260px;
+    }
   }
 }
