@@ -1,0 +1,65 @@
+.summary {
+  padding: $space-24 $space-30 $space-30;
+
+  &__title {
+    @include text($dark-gray-blue, $text-18, $font-semibold, start);
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+    margin: $space-24 0;
+    list-style: none;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    width: 315px;
+    border-radius: 12px;
+  }
+
+  &__type {
+    display: flex;
+    gap: $space-12;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+  }
+
+  &__subtitle {
+    font-size: $text-16;
+    font-weight: $font-medium;
+  }
+
+  &__points {
+    color: $dark-gray-blue;
+    font-size: $text-16;
+    font-weight: $font-semibold;
+  }
+
+  &__score {
+    display: inline-block;
+    margin-right: $space-8;
+  }
+
+  &__total {
+    opacity: 0.5;
+  }
+
+  &__btn {
+    height: 56px;
+    width: 315px;
+    border: none;
+    background: $dark-gray-blue;
+    border-radius: 128px;
+    color: $white;
+    font-size: $text-18;
+    font-weight: $font-semibold;
+  }
+}
