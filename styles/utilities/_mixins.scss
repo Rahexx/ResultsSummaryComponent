@@ -4,3 +4,8 @@
   font-weight: $fontWeight;
   text-align: $textAlign;
 }
+
+@mixin summaryInfo() {
+  height: 56px;
+  width: 315px;
+}
