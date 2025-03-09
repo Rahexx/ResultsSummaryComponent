@@ -92,7 +92,7 @@ button {
   }
   .results__score {
     margin: 2.1875rem 0 1.75rem;
-    padding: 3.4375rem 0;
+    padding: 2.5rem 0;
     height: 200px;
     width: 200px;
     font-size: 4.5rem;
@@ -156,14 +156,26 @@ button {
 .summary__info--red {
   background: hsl(0, 100%, 67%);
 }
+.summary__info--red .summary__subtitle {
+  color: hsl(0, 100%, 67%);
+}
 .summary__info--yellow {
   background: hsl(39, 100%, 56%);
+}
+.summary__info--yellow .summary__subtitle {
+  color: hsl(39, 100%, 56%);
 }
 .summary__info--green {
   background: hsl(166, 100%, 37%);
 }
+.summary__info--green .summary__subtitle {
+  color: hsl(166, 100%, 37%);
+}
 .summary__info--blue {
   background: hsl(234, 85%, 45%);
+}
+.summary__info--blue .summary__subtitle {
+  color: hsl(234, 85%, 45%);
 }
 .summary__type {
   display: flex;
