@@ -240,6 +240,8 @@ button {
     width: 288px;
   }
   .summary__info::before {
+    top: -2px;
+    height: 59px;
     width: 290px;
   }
   .summary__subtitle, .summary__points {
@@ -251,7 +253,13 @@ button {
 }
 .container {
   font-family: "Hanken Grotesk", sans-serif;
-  background: hsl(221, 100%, 96%);
+  background: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 992px) {
+  .container {
+    background: hsl(221, 100%, 96%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
