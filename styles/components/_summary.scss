@@ -44,18 +44,34 @@
 
     &--red {
       background: $light-red;
+
+      .summary__subtitle {
+        color: $light-red;
+      }
     }
 
     &--yellow {
       background: $orange-yellow;
+
+      .summary__subtitle {
+        color: $orange-yellow;
+      }
     }
 
     &--green {
       background: $green-teal;
+
+      .summary__subtitle {
+        color: $green-teal;
+      }
     }
 
     &--blue {
       background: $cobalt-blue;
+
+      .summary__subtitle {
+        color: $cobalt-blue;
+      }
     }
   }
 
