@@ -1,0 +1,163 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $space-24 $space-30 $space-30;
+
+  &__title {
+    @include text($dark-gray-blue, $text-18, $font-semibold, start);
+    display: inline-block;
+    width: 315px;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+    margin: $space-24 0;
+    list-style: none;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $space-16;
+    height: 56px;
+    width: 315px;
+    border-radius: 12px;
+    z-index: 2;
+
+    &::before {
+      height: 58px;
+      width: 318px;
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      display: block;
+      background: $white-95;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    &--red {
+      background: $light-red;
+    }
+
+    &--yellow {
+      background: $orange-yellow;
+    }
+
+    &--green {
+      background: $green-teal;
+    }
+
+    &--blue {
+      background: $cobalt-blue;
+    }
+  }
+
+  &__type {
+    display: flex;
+    gap: $space-12;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+  }
+
+  &__subtitle {
+    font-size: $text-16;
+    font-weight: $font-medium;
+  }
+
+  &__points {
+    color: $dark-gray-blue;
+    font-size: $text-16;
+    font-weight: $font-semibold;
+  }
+
+  &__score {
+    display: inline-block;
+    margin-right: $space-8;
+  }
+
+  &__total {
+    opacity: 0.5;
+  }
+
+  &__btn {
+    position: relative;
+    overflow: hidden;
+    height: 56px;
+    width: 315px;
+    border: none;
+    background: $dark-gray-blue;
+    border-radius: 128px;
+    color: $white;
+    font-size: $text-18;
+    font-weight: $font-semibold;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: $gradient;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      z-index: 1;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:hover {
+      box-shadow: 0 30px 60px 0 $shadow;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .summary {
+    padding: $space-38 $space-40 $space-46;
+
+    &__title {
+      font-size: $text-24;
+      width: 288px;
+    }
+
+    &__stats {
+      margin: $space-28 0 $space-41;
+    }
+
+    &__info {
+      padding: 0 $space-16;
+      width: 288px;
+
+      &::before {
+        width: 290px;
+      }
+    }
+
+    &__subtitle,
+    &__points {
+      font-size: $text-18;
+    }
+
+    &__btn {
+      width: 288px;
+    }
+  }
+}

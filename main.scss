@@ -1,0 +1,11 @@
+@import './styles/base/base';
+@import './styles/utilities/variables';
+@import './styles/utilities/mixins';
+@import './styles/components/card';
+@import './styles/components/results';
+@import './styles/components/summary';
+
+.container {
+  font-family: $font-primary;
+  background: $pale-blue;
+}
